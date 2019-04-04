@@ -1,0 +1,116 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="jumbotron.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+ 
+
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <style>p.indent{ padding-left: 1.8em }
+      div.ex2{
+      padding-left: 110px;
+      }
+    </style>
+    <title>4PROGRESS</title>
+
+    
+    
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" class="navbar-brand">Deep Scene Parellelization</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav">
+            <li><a href="./master.html">Master</a></li>
+            <li><a href="./node.html">Node</a></li>
+            <li><a href="./findings.html">Findings</a></li>
+	  </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <center>
+      <div class="jumbotron">
+	       <div class="container">
+            <h1>Findings</h1>
+            <h2>Tests run and conducted on the 4PROGRESS Cluster</h2>
+	       </div>
+      </div>
+    </center>
+    
+    <div class="container">
+
+    <p width="80%"><br>The purpose of building the 4PROGRESS Cluster is to extend the compute capability of the desktop of one machine in the lab to code that can utilize all desktop machines in the 4PROGRESS lab. Utilizing multiple desktops also requires code that can accommodate and adapt for using multiple machines and different hardware landscapes. In particular, we attempted to optimize the GPU rendering portion of the deep scene estimation pipeline created by the graduate students in the 4PROGRESS lab.</p>
+
+    <p>The deep scene estimation pipeline is to build a semantic map at the level of scene graph for mobile manipulator.</p>
+
+    <center>
+      <img src="https://www.doc.ic.ac.uk/~rfs09/images/slampp.png" class="img-thumbnail" alt="slam++ image" width="40%">
+    </center>
+
+    <p class="indent"></p>
+
+    <p>Implementing OpenMPI and cluster computing, we were able to offload rendering onto multiple desktop machines. Unfortunately, this does come prevent any other user from using the desktop machines when utilizing the onboard Graphics card. If using only CPU required programs, all machines can be utilized by both remote hosts and the current local user.</p><p>Below are our recorded findings and how the cluster performed on several different levels.</p>
+    
+    <p class="indent"></p>
+
+    <center>
+      <img src="results-chart.jpg" class="img-thumbnail" alt="results-chart" width="40%">
+    </center>
+    
+    <p with="80%"><br>Some areas to improve on is that message passing over a network does cost time when utilizing multiple GPUs on multiple machines rather than interposes communication between multiple GPUs on a single machine. Another area that also causes concern is the GPU native coding language, CUDA, does not allow for process communication between GPUs on separate machines, but does allow for communication between GPUs on a single machine. A rather, more cost effective way than utilizing a cluster would be to utilize a single machine with multiple GPUs. This would in turn cut down time spend on machine process communication, code restructuring overhead. However, this method does give new life to machines no longer being used, allowing more complex computations to be calculated within the lab rather than being outsourced by a third party.</p>
+
+    </div>
+
+    <p class="indent"></p> 
+
+    <footer class="panel-footer">
+      <div class="container">
+  <p>
+	  <a href="#">Back to top</a>
+	</p>
+	<p>This project has been an undertaking of Dr. Jenkins, 4PROGRESS (Perception Robotics grounded reasoning systems) research group at the University of Michigan, Kevin Benton and Abenezer Wudenhe.
+	</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
+

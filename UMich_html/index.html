@@ -1,0 +1,166 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="jumbotron.css" rel="stylesheet">
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+
+
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <style>p.indent{ padding-left: 1.8em }</style>
+    <title>4PROGRESS</title>
+    .container {
+    padding: 15px;
+    }
+    
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" class="navbar-brand">Deep Scene Parellelization</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav">
+            <li><a href="./master.html">Master</a></li>
+            <li><a href="./node.html">Node</a></li>
+	    <li><a href="./findings.html">Findings</a></li>
+	  </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <center>
+      <div class="jumbotron">
+	<div class="container">
+          <h1>Welcome to the 4PROGRESS Cluster</h1>
+          <p>This is the official homepage for the 4PROGRESS Cluster. The Cluster is a collection of computers used for parallel computing in hopes of speeding up the processes needed for the 4PROGRESS lab. This cluster is an ongoing experiment that and is still in the implementation phase. As more progress is made, more information shall be updated to this site. Thank you.</p>
+	</div>
+      </div>
+    </center>
+    
+    <center>
+      <div class="container">
+	<!-- Example row of columns -->
+	<div class="row">
+          <div class="col-md-4">
+	    <a href="./master.html">
+              <h2>Master Node</h2>
+	    </a>
+            <p>The master nod the local cluster is a laptop that will be able to communicate between the two nodes. The master node is in charge of data distribution and scheduling tasks to node 1 and node 2. The master node also host up to date status information on the load of the cluster.</p>
+	  </div>
+          <div class="col-md-4">
+	    <a href="./node.html">
+              <h2>Node 1</h2>
+	    </a>
+            <p>The first node of the local cluster is one of two of the Alienware desktops in the lab. Equiped with a NVidia GPU and an Intel Core i7 CPU. Utilizing both GPU and CPU could show dramatic speedup in parallel code performance.</p>
+	  </div>
+          <div class="col-md-4">
+	    <a href="./node.html">
+	      <h2>Node 2</h2>
+	    </a>
+            <p>The second node of the local cluster is  one of two of the Alienware desktops in the lab. Equiped with a NVidia GPU and an Intel Core i7 CPU. Utilizing both GPU and CPU could show dramatic speedup in parallel code performance.</p>
+          </div>
+	</div>
+    </center>
+
+    <div class="container">
+      <center>
+	<h2>Cluster Layout</h2>
+	<img src="diagram.jpg" class="img-thumbnail" alt="Cluster Layout" width="40%">
+      </center>
+      <p width="80%"><br>This particular cluster is classified as a ‘Beowulf Cluster’. A Beowulf Cluster is identified as identical, commodity-grade computers networked into a small local area network with libraries and programs installed which allow processing to be shared among them. This cluster uses the Open Message Passing Interface (OpenMPI) for coordination and dividing tasks among the group of networked computers.</p><p>A Network File System (NFS) is also utilized between the master node and two secondary nodes that lets all nodes view and optionally store and update files as if they were on each node’s own computer.</p><p>The master node is a separate machine from node 1 and node 2. Ganglia, a monitoring system is used to evaluate CPU process load and usage between each node of the cluster. This allows a greater understanding of the weight on each node. Together these tools help form the 4PROGRESS Cluster.</p>
+    </div>
+    
+    <center>
+      <h2>Cluster Load Analysis</h2>
+      <a href="ganglia">
+	<img src="http://141.212.108.224/ganglia/stacked.php?m=load_one&c=4PROGRESS%20Cluster&r=hour&st=1497576416" alt="Graph" width="80%">
+      </a>
+    </center>
+    
+    <center>
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+	    <a href="ganglia">
+	      <h3>Master Node Load Analysis</h3>
+              <img src="http://141.212.108.224/ganglia/graph.php?m=load_one&z=small&c=4PROGRESS%20Cluster&h=localhost&l=e2ecff&v=0.24&r=hour&su=1&st=1497849023&x=2.92&n=0&vl=+" alt="Master ndoe is down at the moment">
+	    </a>
+          </div>
+          <div class="col-md-4">
+	    <a href="ganglia">
+              <h3>Node 1 Load Analysis</h3>
+	      <img src="http://141.212.108.224/ganglia/graph.php?m=load_one&z=small&c=4PROGRESS%20Cluster&h=node1&l=caff98&v=2.09&r=hour&su=1&st=1497849023&x=2.92&n=0&vl=+" alt="node 1 is down at the moment">
+	    </a>
+          </div>
+          <div class="col-md-4">
+	    <a href="ganglia">
+              <h3>Node 2 Load Analysis</h3>
+	      <img src="http://141.212.108.224/ganglia/graph.php?m=load_one&z=small&c=4PROGRESS%20Cluster&h=node2&l=e2ecff&;v=&r=hour&su=1&st=1498237744&x=3.58&n=0&vl=+" alt="node 2 is down at the moment">
+	    </a>
+          </div>
+	  <div class="col-md-4">
+            <a href="ganglia">
+              <h3>Node 3 Load Analysis</h3>
+	      <img src="http://141.212.108.224/ganglia/graph.php?m=load_one&z=small&c=4PROGRESS%20Cluster&h=node3&l=caff98&v=1.00&r=hour&su=1&st=1501604652&x=2.55&n=0&vl=+" alt="node 3 is down at the moment">
+	    </a>
+	  </div>
+	  <div class="col-md-4">
+            <a href="ganglia">
+	       <h3>Node 4 Load Analysis</h3>
+	       <img src="http://141.212.108.224/ganglia/graph.php?m=load_one&z=small&c=4PROGRESS%20Cluster&h=node4&l=caff98&v=1.07&r=hour&su=1&st=1501613118&x=2.33&n=0&vl=+" alt="node 4 is down at the moment">
+	    </a>
+	  </div>
+        </div>
+    </center>
+    
+    
+    <p class="indent"></p> 
+    
+    <footer class="panel-footer">
+      <div class="container">
+	<p>
+	  <a href="#">Back to top</a>
+	</p>
+	<p>This project has been an undertaking of Dr. Jenkins, 4PROGRESS (Perception Robotics grounded reasoning systems) research group at the University of Michigan, Kevin Benton and Abenezer Wudenhe.
+	</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
