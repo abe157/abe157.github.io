@@ -8,3 +8,7 @@
   padding: 1em;
   /*border: solid;*/
 }
+
+.navbar-collapse.in {
+    display: block !important;
+}
