@@ -5,90 +5,107 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Github Calendar script -->
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>A.Y.W.</title>
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/laptop_1f4bb.png">
 
-    <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A.Y.W.</title>
+  <link rel="icon" href="/images/favicon.svg">
 
-  </head>
+  <!-- Custom CSS -->
+  <link href="css/one-page-wonder.css" rel="stylesheet">
+  <!-- Github Calendar script -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
 
-  <body>
+</head>
 
-    <!-- NAV BAR -->
-     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <a class="navbar-brand"><b>A.Y.W.</b></a>
-      <div class="container">
-        <div class="navbar-header">
-          <button 
-            type="button" 
-            class="navbar-toggle collapsed" 
-            data-toggle="collapse" 
-            toggle="collapse" 
-            data-target="#navbarSupportedContent" 
-            aria-expanded="false" 
-            aria-controls="navbarSupportedContent">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbarSupportedContent" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#quotes">Quotes</a></li>
-            <!-- <li><a href="#publications">Publications</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <a class="navbar-brand"><b>A.Y.W.</b></a>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" toggle="collapse"
+          data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </nav>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#quotes">Quotes</a></li>
+          <!-- <li><a href="#publications">Publications</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activity">Activity</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
-    <!-- SECTION HOME -->
-    <section id='home'>
-    </section>
-    <hr class="featurette-divider">
+  <!-- SECTION HOME -->
+  <section id='home'>
+  </section>
+  <hr class="featurette-divider">
 
-    
-    <section id="about" class="about">
-      <div class="container">
 
-          <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" width="40%" src="./images/ProfilePic.jpg">
-               
-            <h1>👾 Abenezer Wudenhe</h1>
-            <p style="font-size:20px;">
-            <b> Computer Science Ph.D. Student </b> <br>
-            University of California Riverside (UCR) <br>
-            <b> Computer Engineering B.S. Graduate </b> <br>
-            University of Maryland Baltimore County (UMBC) <br>
-            ✉️ awude001 [AT] ucr [DOT] edu
-            </p>
+  <section id="about" class="about">
+    <div class="container">
 
-            <a style="font-size:20px;" href="./pdfs/AbenezerWudenheResume.pdf"><p>Resume</p></a>
-            <a style="font-size:20px;" href="./pdfs/AbenezerWudenheC.V..pdf"><p>Curriculum Vitae (C.V.)</p></a>
-            <a style="font-size:20px;" href="https://linkedin.com/in/aywudenhe"><p>LinkedIn</p></a>
-            <a style="font-size:20px;" href="https://scholar.google.com/citations?user=kJ2WK3wAAAAJ&hl=en">Google Scholar</a>
+      <div class="featurette" id="services">
+        <img class="featurette-image img-circle img-responsive pull-left" width="40%" src="./images/ProfilePic.jpg">
 
-          </div>
-          <p style="font-size:20px;">
-            I am currently taking courses at the University of California Riverside (UCR), majoring in Computer Science. I received a undergraduate degree in Computer Engineering from the University of Maryland, Baltimore County (UMBC). A majority of my courses in undergrad focus on Very-Large-Scale Integration (VLSI) as well as Computer Security. Enjoying both the Computer Science and Electrical Engineering aspects of Computer Engineering has allowed me to succeed in my courses and truly appreciate the complexities of computing machines.
-          </p>
+        <h1>👾 Abenezer Wudenhe</h1>
+        <p style="font-size:20px;">
+          <b> Computer Science Ph.D. Graduate </b> <br>
+          University of California Riverside (UCR) <br>
+          <b> Computer Engineering B.S. Graduate </b> <br>
+          University of Maryland Baltimore County (UMBC) <br>
+          ✉️ awude001 [AT] ucr [DOT] edu
+        </p>
 
-        </div>
-    </section>
+        <a style="font-size:20px;" href="./pdfs/AbenezerWudenheResume.pdf">
+          <p>Resume</p>
+        </a>
+        <a style="font-size:20px;" href="./pdfs/AbenezerWudenheC.V..pdf">
+          <p>Curriculum Vitae (CV)</p>
+        </a>
+        <a style="font-size:20px;" href="https://linkedin.com/in/aywudenhe">
+          <p>LinkedIn</p>
+        </a>
+        <a style="font-size:20px;" href="https://scholar.google.com/citations?user=kJ2WK3wAAAAJ&hl=en">Google
+          Scholar</a>
 
-<!-- 
+      </div>
+      <p style="font-size:20px;">
+        <br />
+        Accomplished Computer Science PhD Researcher with 6+ years of specialized experience in accelerator
+        devices, focusing on GPGPUs, TPUs, with exposure to FPGAs. With an undergraduate degree focusing in
+        VLSI and Computer Security. Industry experiences working in large-scale infrastructure, along with a large
+        exposure to algorithms, architecture, programming languages, and operating systems, proven track record of
+        delivering results shown by several publications and scholarships.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- 
     <div class="container">
     <section id='publications'>
     </section>
@@ -98,8 +115,9 @@
     </div> -->
 
 
-    <!-- Page Content -->
-    <div class="container">
+  <!-- Page Content -->
+  <div class="container">
+
 
     <!-- SECTION QUOTES -->
     <section id='quotes'>
@@ -108,34 +126,33 @@
 
     <h1>📝 Quotes</h1>
     <p>
-    Below are some pieces of writing I enjoy.
+      Below are some pieces of writing I enjoy.
     </p>
 
     <!-- Goodreads widdget -->
     <div>
-      <br/>
+      <br />
       <h4>
         <div id="gr_quote_body"></div>
       </h4>
-      
+
       <script src="https://www.goodreads.com/quotes/widget/148156730-abenezer-yitagesu?v=2" type="text/javascript">
       </script>
-        <script>
-           function load_js()
-           {
-              var head= document.getElementsByTagName('head')[0];
-              var script= document.createElement('script');
-              script.src= 'https://www.goodreads.com/quotes/widget/148156730-abenezer-yitagesu?v=2';
-              head.appendChild(script);
-           }
-           load_js();
-        </script>
-        <br/>
+      <script>
+        function load_js() {
+          var head = document.getElementsByTagName('head')[0];
+          var script = document.createElement('script');
+          script.src = 'https://www.goodreads.com/quotes/widget/148156730-abenezer-yitagesu?v=2';
+          head.appendChild(script);
+        }
+        load_js();
+      </script>
+      <br />
     </div>
     <!-- Goodreads widdget refresh button -->
     <button onclick="load_js()" class="btn btn-secondary btn-lg">Refresh</button>
 
-      
+
     <!-- SECTION PROJECTS -->
     <section id='projects'>
     </section>
@@ -143,9 +160,9 @@
 
     <h1>🏗 Projects / Professional Experience</h1>
     <p>
-    Below are some of the projects, summer internships, and club activities I have participated in.
-    <br>
-    Feel free to brows and read more about each project by clicking the title links.
+      Below are some of the projects, summer internships, and club activities I have participated in.
+      <br>
+      Feel free to brows and read more about each project by clicking the title links.
     </p>
 
     <!-- row container -->
@@ -154,90 +171,117 @@
 
       <!-- ISPASS 2024 Poster -->
       <div class="col-sm-4">
-        <h3><a href="https://ispass.org/ispass2024/accepted-posters.php"><center>ISPASS 2024 Poster</center></a></h3>
+        <h3><a href="https://ispass.org/ispass2024/accepted-posters.php">
+            <center>ISPASS 2024 Poster</center>
+          </a></h3>
         <center>
-          <img  src="./images/ISPASS_2024_v5.png" class="img-thumbnail" width="50%">
+          <img src="./images/ISPASS_2024_v5.png" class="img-thumbnail" width="50%">
         </center>
         <p>
           <b>Accel-Bench: Exploring the Potential of Programming using Hardware-Accelerated Functions</b>
           <br>
           May 6, 2024
           <br>
-          Presentation at the <a href="https://ispass.org/ispass2024/">2024 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)</a>.
-          This project focuses on a benchmark suite that aims to capture the performance of accelerator-intensive programming.
+          Presentation at the <a href="https://ispass.org/ispass2024/">2024 IEEE International Symposium on Performance
+            Analysis of Systems and Software (ISPASS)</a>.
+          This project focuses on a benchmark suite that aims to capture the performance of accelerator-intensive
+          programming.
           Poster can be found <a href="./images/ISPASS_2024_v5.pdf"> here</a>.
         <p>
       </div>
 
       <!-- IWOCL 2022 Poster -->
       <div class="col-sm-4">
-        <h3><a href="https://dl.acm.org/doi/abs/10.1145/3529538.3529988"><center>IWOCL 2022 Poster</center></a></h3>
+        <h3><a href="https://dl.acm.org/doi/abs/10.1145/3529538.3529988">
+            <center>IWOCL 2022 Poster</center>
+          </a></h3>
         <center>
-          <img  src="./images/19-iwocl-syclcon-2022-Wudenhe.png" class="img-thumbnail" width="50%">
+          <img src="./images/19-iwocl-syclcon-2022-Wudenhe.png" class="img-thumbnail" width="50%">
         </center>
         <p>
-          <b>IWOCL 2022 Poster: Embedding a DSL in SYCL for Productive and Performant Tensor Computing on Heterogeneous Devices</b>
+          <b>IWOCL 2022 Poster: Embedding a DSL in SYCL for Productive and Performant Tensor Computing on Heterogeneous
+            Devices</b>
           <br>
           May 11, 2022
           <br>
-          Presentation at the 2022 <a href="https://www.iwocl.org/iwocl-2022/program/#:~:text=Embedding%20a%20DSL%20in%20SYCL%20for%20Productive%20and%20Performant%20Tensor%20Computing%20on%20Heterogeneous%20Devices">10th International Workshop on OpenCL (IWOCL) and SYCL</a>.
-          This project focuses on combining data parallelism provided though the combination of Data Parallel C++ (DPC++), and Temporal To Spatial Programming (T2SP) to provide a hardware agnostic programming model to construct new tensor computations.
-          Presentation slides can be found <a href="https://www.iwocl.org/wp-content/uploads/19-presentation-iwocl-syclcon-2022-wudenhe.pdf"> here</a>.
+          Presentation at the 2022 <a
+            href="https://www.iwocl.org/iwocl-2022/program/#:~:text=Embedding%20a%20DSL%20in%20SYCL%20for%20Productive%20and%20Performant%20Tensor%20Computing%20on%20Heterogeneous%20Devices">10th
+            International Workshop on OpenCL (IWOCL) and SYCL</a>.
+          This project focuses on combining data parallelism provided though the combination of Data Parallel C++
+          (DPC++), and Temporal To Spatial Programming (T2SP) to provide a hardware agnostic programming model to
+          construct new tensor computations.
+          Presentation slides can be found <a
+            href="https://www.iwocl.org/wp-content/uploads/19-presentation-iwocl-syclcon-2022-wudenhe.pdf"> here</a>.
         <p>
       </div>
 
 
       <!-- Google CSRMP -->
       <div class="col-sm-4">
-        <h3><a href="https://research.google/outreach/csrmp/recipients/"><center>Google CSRMP 2021</center></a></h3>
+        <h3><a href="https://research.google/outreach/csrmp/recipients/">
+            <center>Google CSRMP 2021</center>
+          </a></h3>
         <center>
-          <img  src="./images/GoogleCSRMP.png" class="img-thumbnail" width="65%">
+          <img src="./images/GoogleCSRMP.png" class="img-thumbnail" width="65%">
         </center>
         <p>
           <b>Google's Computer Science Research Mentorship Program Program for 2021, Class B (September - December)</b>
           <br>
           Sep. - Dec. 2021
           <br>
-          Participate in a 12-week virtual workshop to navigate Computer Science Research. Discuss and collaborate one on one with research faculty at google. Discuss roadblocks and possible solutions to producing novel computing research.
+          Participate in a 12-week virtual workshop to navigate Computer Science Research. Discuss and collaborate one
+          on one with research faculty at google. Discuss roadblocks and possible solutions to producing novel computing
+          research.
         <p>
       </div>
 
 
       <!-- FaceBook ABCS -->
       <div class="col-sm-4">
-        <h3><a href="https://www.facebook.com/groups/amplified2021c1"><center>FaceBook/Meta Amplified Program 2021</center></a></h3>
+        <h3><a href="https://www.facebook.com/groups/amplified2021c1">
+            <center>FaceBook/Meta Amplified Program 2021</center>
+          </a></h3>
         <center>
-          <img  src="./images/FaceBookABCS.jpeg" class="img-thumbnail" width="90%">
+          <img src="./images/FaceBookABCS.jpeg" class="img-thumbnail" width="90%">
         </center>
         <p>
           <b>FaceBook/Meta's Amplified: Above & Beyond Computer Science (ABCS) Program for 2021</b>
           <br>
           June - Aug. 2021
           <br>
-          Participated in FaceBook/Meta's Amplified "Above & Beyond Computer Science" (ABCS) Program for 2021 PhD students in preparation industry technical interviews. The program includes a three-part virtual workshop over the course of six weeks reviewing technical concepts important to the interviewing process.
+          Participated in FaceBook/Meta's Amplified "Above & Beyond Computer Science" (ABCS) Program for 2021 PhD
+          students in preparation industry technical interviews. The program includes a three-part virtual workshop over
+          the course of six weeks reviewing technical concepts important to the interviewing process.
         <p>
       </div>
 
       <!-- CWWMCA RESEARCH PRESENTAITON -->
       <div class="col-sm-4">
-        <h3><a href="./pdfs/CWWMCA2020_Poster.pdf"><center>CWWMCA 2020 Poster</center></a></h3>
+        <h3><a href="./pdfs/CWWMCA2020_Poster.pdf">
+            <center>CWWMCA 2020 Poster</center>
+          </a></h3>
         <center>
-          <img  src="./images/CWWMCA2020_Poster.png" class="img-thumbnail" width="60%">
+          <img src="./images/CWWMCA2020_Poster.png" class="img-thumbnail" width="60%">
         </center>
         <p>
           <b>CWWMCA 2020 Poster: Characterizing Hardware Accelerated Data Center Machine Learning</b>
           <br>
           Oct. 17, 2020
           <br>
-          Presentation at the 2020 <a href="https://www.colorado.edu/conference/cwwmca/">Career Workshop for Women & Minorities in Computer Architecture (CWWMCA)</a> on Google TPU performance characterization in conjunction with the <a href="https://www.microarch.org/micro53/">53rd IEEE/ACM International Symposium on Microarchitecture (MICRO-53)</a>
+          Presentation at the 2020 <a href="https://www.colorado.edu/conference/cwwmca/">Career Workshop for Women &
+            Minorities in Computer Architecture (CWWMCA)</a> on Google TPU performance characterization in conjunction
+          with the <a href="https://www.microarch.org/micro53/">53rd IEEE/ACM International Symposium on
+            Microarchitecture (MICRO-53)</a>
         <p>
       </div>
 
       <!-- UCR AGOPS CS225 -->
       <div class="col-sm-4">
-        <h3><a href="https://github.com/abe157/CS225Proj"><center>UCR Ag Ops</center></a></h3>  
+        <h3><a href="https://github.com/abe157/CS225Proj">
+            <center>UCR Ag Ops</center>
+          </a></h3>
         <center>
-          <img src="./images/UCRAgOpsScheduling.png" class="img-thumbnail" >
+          <img src="./images/UCRAgOpsScheduling.png" class="img-thumbnail">
         </center>
         <p>
           <b>UCR CS225 Spacial Computing Ag Ops Project</b>
@@ -246,13 +290,15 @@
           <br>
           Develop front end for mapping agricultural lands and creating pesticide order request and service forms.
         <p>
-      </div> 
+      </div>
 
       <!-- Invisible Hands -->
       <div class="col-sm-4">
-        <h3><a href="https://abe157-invisiblehands.glitch.me/"><center>Invisible Hands</center></a></h3>
+        <h3><a href="https://abe157-invisiblehands.glitch.me/">
+            <center>Invisible Hands</center>
+          </a></h3>
         <center>
-          <img  src="./images/Invisible Hands.png" class="img-thumbnail" >
+          <img src="./images/Invisible Hands.png" class="img-thumbnail">
         </center>
         <p>
           <b>Invisible Hands Side Project</b>
@@ -260,30 +306,36 @@
           Mar. 2020
           <br>
           Create a simple map and database to request help durring the pandemic of COVID-19.
-          Inspired by the work of the organization under the same name 
+          Inspired by the work of the organization under the same name
           <a href="https://www.vogue.com/article/vogue-heroes-heroines-invisible-hands-coronavirus">here</a>.
         </p>
       </div>
 
       <!-- NVMW RESEARCH PRESENTAITON -->
       <div class="col-sm-4">
-        <h3><a href="./pdfs/NVMW_2019_Poster.pdf"><center>NVMW 2019 Poster</center></a></h3>
+        <h3><a href="./pdfs/NVMW_2019_Poster.pdf">
+            <center>NVMW 2019 Poster</center>
+          </a></h3>
         <center>
-          <img  src="./images/NVMW_2019_Poster.png" class="img-thumbnail" width="60%">
+          <img src="./images/NVMW_2019_Poster.png" class="img-thumbnail" width="60%">
         </center>
         <p>
           <b>NVMW 2019 Poster: What Can Intelligent SSDs Do for machine Learning</b>
           <br>
           Mar. 10-12, 2019
           <br>
-          Presentation at the 2019 <a href="http://nvmw.ucsd.edu/2019/">Non-Volatile Memories Workshop</a> on SSD powered computation.
-          Offloading preprocessing work to SSD to reduce host bottleneck with machine learning application and accelerators.
+          Presentation at the 2019 <a href="http://nvmw.ucsd.edu/2019/">Non-Volatile Memories Workshop</a> on SSD
+          powered computation.
+          Offloading preprocessing work to SSD to reduce host bottleneck with machine learning application and
+          accelerators.
         <p>
       </div>
 
       <!-- Smart Mirror -->
       <div class="col-sm-4">
-        <h3><a href="https://drive.google.com/open?id=0B_VwUv7mpqCrZDMtNVBLZGZoeEU"><center>Smart Infinity Mirror</center></a></h3>  
+        <h3><a href="https://drive.google.com/open?id=0B_VwUv7mpqCrZDMtNVBLZGZoeEU">
+            <center>Smart Infinity Mirror</center>
+          </a></h3>
         <center>
           <img src="./images/mirror.jpg" class="img-thumbnail" width="60%">
         </center>
@@ -292,16 +344,19 @@
           <br>
           Aug. - Dec. 2017
           <br>
-          UMBC IEEE developed a smart mirror to display in front of the office. 
-          The mirror features an infinity illusion as well as an API that gives calender updates and up to the minute weather updates.
+          UMBC IEEE developed a smart mirror to display in front of the office.
+          The mirror features an infinity illusion as well as an API that gives calender updates and up to the minute
+          weather updates.
         <p>
       </div>
 
       <!-- 360 Display -->
       <div class="col-sm-4">
-        <h3><a href="https://drive.google.com/open?id=1fj1fWYj9WyD4zAc_LAO6tu7NiWAx0z80"><center>360 Display</center></a></h3>
+        <h3><a href="https://drive.google.com/open?id=1fj1fWYj9WyD4zAc_LAO6tu7NiWAx0z80">
+            <center>360 Display</center>
+          </a></h3>
         <center>
-          <img  src="./images/360_Display.jpg" class="img-thumbnail" >
+          <img src="./images/360_Display.jpg" class="img-thumbnail">
         </center>
         <p>
           <b>UMBC IEEE 360 Display</b>
@@ -314,52 +369,64 @@
 
       <!-- Electric Skateboard -->
       <div class="col-sm-4">
-        <h3><a href="https://drive.google.com/drive/folders/1uqoMe_3NVp-hB34HNZPNOQDr6ryk6_1h?usp=sharing"><center>Electric Skateboard</center></a></h3>
+        <h3><a href="https://drive.google.com/drive/folders/1uqoMe_3NVp-hB34HNZPNOQDr6ryk6_1h?usp=sharing">
+            <center>Electric Skateboard</center>
+          </a></h3>
         <center>
-          <img  src="./images/skateboard.jpg" class="img-thumbnail" >
+          <img src="./images/skateboard.jpg" class="img-thumbnail">
         </center>
         <p>
           <b>UMBC IEEE Cheap Electric Skateboard</b>
           <br>
           Feb. - May 2018
           <br>
-          UMBC IEEE students attempt to create a cheap and fun motorized skateboard as a proof of concept at the affordability of skateboards.
+          UMBC IEEE students attempt to create a cheap and fun motorized skateboard as a proof of concept at the
+          affordability of skateboards.
         <p>
       </div>
 
       <!-- Quads on the Quad -->
       <div class="col-sm-4">
-        <h3><a href="https://drive.google.com/drive/folders/0B_VwUv7mpqCrNUdMdFNKRUFsVGs?usp=sharing"><center>Quadcopters</center></a></h3>  
+        <h3><a href="https://drive.google.com/drive/folders/0B_VwUv7mpqCrNUdMdFNKRUFsVGs?usp=sharing">
+            <center>Quadcopters</center>
+          </a></h3>
         <center>
-          <img src="./images/umbc_uva.png" class="img-thumbnail" width="80%"></center>
+          <img src="./images/umbc_uva.png" class="img-thumbnail" width="80%">
+        </center>
         <p>
           <b>Quads on the Quad</b>
           <br>Sep. - Apr. 2015<br>
-          UMBC IEEE along with UMBC UAV club hold a joint quadcopter workshop 
-          as well as end of the year event to test and fly quadcopters students have built over the past semester in the workshop.
+          UMBC IEEE along with UMBC UAV club hold a joint quadcopter workshop
+          as well as end of the year event to test and fly quadcopters students have built over the past semester in the
+          workshop.
         <p>
       </div>
 
       <!-- HPC REU -->
       <div class="col-sm-4">
-        <h3><a href="http://hpcreu.umbc.edu/summer2015/projects/team7/"><center>HPC REU</center></a></h3>
+        <h3><a href="http://hpcreu.umbc.edu/summer2015/projects/team7/">
+            <center>HPC REU</center>
+          </a></h3>
         <center>
-          <img  src="./images/Team7All.jpg" class="img-thumbnail" >
+          <img src="./images/Team7All.jpg" class="img-thumbnail">
         </center>
         <p>
           <b>High Performance Computing REU 2015</b>
           <br>
           May - Aug. 2015
           <br>
-          Undergraduate research assistant to Dr. Matthias Gobbert as part of UMBC Research Experiences for Undergraduates (REU) for high performance computing.
+          Undergraduate research assistant to Dr. Matthias Gobbert as part of UMBC Research Experiences for
+          Undergraduates (REU) for high performance computing.
         </p>
       </div>
 
       <!-- EEG Research -->
       <div class="col-sm-4">
-        <h3><a href="http://ieeexplore.ieee.org/document/7846869/"><center>EEG Lab</center></a></h3>
+        <h3><a href="http://ieeexplore.ieee.org/document/7846869/">
+            <center>EEG Lab</center>
+          </a></h3>
         <center>
-          <img  src="./images/figure_1.png" class="img-thumbnail" width="70%">
+          <img src="./images/figure_1.png" class="img-thumbnail" width="70%">
         </center>
         <p>
           <b>Electroencephalograph (EEG) Study on Image Formation 2016</b>
@@ -372,8 +439,10 @@
 
       <!-- UMBC IEEE Garden -->
       <div class="col-sm-4">
-        <h3><a href="http://www.umbc.edu/ieee/"><center>IEEE Garden</center></a></h3> 
-        <img  src="./images/Garden.jpg" class="img-thumbnail" >
+        <h3><a href="http://www.umbc.edu/ieee/">
+            <center>IEEE Garden</center>
+          </a></h3>
+        <img src="./images/Garden.jpg" class="img-thumbnail">
         <p>
           <b>UMBC IEEE Automated Gardening Monitoring System 2017</b>
           <br>
@@ -385,29 +454,218 @@
 
       <!-- UMBC Battel Bots -->
       <div class="col-sm-4">
-        <h3><a href="https://drive.google.com/open?id=0B1hs7Y_ml_ZjQmdZTFVWUVd2eDQ"><center>Battle Bots</center></a></h3>
+        <h3><a href="https://drive.google.com/open?id=0B1hs7Y_ml_ZjQmdZTFVWUVd2eDQ">
+            <center>Battle Bots</center>
+          </a></h3>
         <img src="./images/figure_2.jpg" class="img-thumbnail" width="100%">
-        <p><b>UMBC IEEE and UMBC Robotics Sumo style Battle Bots Competition 2017</b><br>Personale seeing the inception of the competition from the begeining to the end</p>
+        <p><b>UMBC IEEE and UMBC Robotics Sumo style Battle Bots Competition 2017</b><br>Personale seeing the inception
+          of the competition from the begeining to the end</p>
       </div>
-      
+
       <!-- UMBC Hackathon -->
       <div class="col-sm-4">
         <h3><a href="http://hackumbc.org/">
-            <center>Hack UMBC</center></a></h3>  
+            <center>Hack UMBC</center>
+          </a></h3>
         <img src="./images/innovate_good.png" class="img-thumbnail">
-        <p><b>UMBC Hackathon 2017</b><br>29-30 April 2017<br>Innovate Good is a 24-hour student Hackathon that held at UMBC 29-30 April 2017 with the theme of creating software or hardware projects to benefit social causes.</p>
+        <p><b>UMBC Hackathon 2017</b><br>29-30 April 2017<br>Innovate Good is a 24-hour student Hackathon that held at
+          UMBC 29-30 April 2017 with the theme of creating software or hardware projects to benefit social causes.</p>
       </div>
-  
 
-    <!-- row container -->
+
+      <!-- row container -->
     </div>
 
-  <!-- Page Content -->
+    <!-- Page Content -->
+
+    <!-- SECTION ACTIVITY -->
+    <section id='activity'></section>
+    <hr class="featurette-divider">
+    <h1>📆 Activity</h1>
+    <p>
+      Below are some calendars to track my activity.
+    </p>
+    <!-- Github -->
+    <h3>Github contribution graph</h3>
+    <p><a href="https://github.com/Bloggify/github-calendar">Code source</a></p>
+    <div class="calendar">
+      Loading data...
+    </div>
+    <script>
+      // new GitHubCalendar(".calendar", "abe157");
+      // or enable responsive functionality:
+      new GitHubCalendar(".calendar", "abe157", { responsive: true });
+    </script>
+
+    <!-- Goodreads Activity -->
+    <h3>GoodReads Activity</h3>
+    <p><a href="https://www.goodreads.com/user/show/148156730-abe">GoodReads profile</a></p>
+    <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+    <style type="text/css" media="screen">
+      .gr_custom_container_1736730443 {
+        /* customize your Goodreads widget container here*/
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 10px 5px 10px 5px;
+        background-color: transparent;
+        color: #000000;
+
+      }
+
+      .gr_custom_header_1736730443 {
+        /* customize your Goodreads header here*/
+        border-bottom: 1px solid gray;
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 150%
+      }
+
+      .gr_custom_each_container_1736730443 {
+        /* customize each individual book container here */
+        width: 100%;
+        clear: both;
+        margin-bottom: 10px;
+        overflow: auto;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #aaa;
+      }
+
+      .gr_custom_book_container_1736730443 {
+        /* customize your book covers here */
+        overflow: hidden;
+        height: 60px;
+        float: left;
+        margin-right: 4px;
+        width: 39px;
+      }
+
+      .gr_custom_author_1736730443 {
+        /* customize your author names here */
+        font-size: 10px;
+      }
+
+      .gr_custom_tags_1736730443 {
+        /* customize your tags here */
+        font-size: 10px;
+        color: gray;
+      }
+
+      .gr_custom_rating_1736730443 {
+        /* customize your rating stars here */
+        float: right;
+      }
+    </style>
+
+    <div id="gr_custom_widget_1736730443">
+      <div class="gr_custom_container_1736730443">
+        <h2 class="gr_custom_header_1736730443">
+          <a style="text-decoration: none;" rel="nofollow"
+            href="https://www.goodreads.com/review/list/148156730-abe?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget">Abe&#39;s
+            bookshelf: read</a>
+        </h2>
+        <div class="gr_custom_each_container_1736730443">
+          <div class="gr_custom_book_container_1736730443">
+            <a title="The Girl Who Kicked the Hornet’s Nest (Millennium, #3)" rel="nofollow"
+              href="https://www.goodreads.com/review/show/7081429244?utm_medium=api&amp;utm_source=custom_widget"><img
+                alt="The Girl Who Kicked the Hornet’s Nest" border="0"
+                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327708260l/6892870._SX50_.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1736730443">
+            <a rel="nofollow"
+              href="https://www.goodreads.com/review/show/7081429244?utm_medium=api&amp;utm_source=custom_widget">The
+              Girl Who Kicked the Hornet’s Nest</a>
+          </div>
+          <div class="gr_custom_author_1736730443">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/706255.Stieg_Larsson">Stieg Larsson</a>
+          </div>
+        </div>
+        <div class="gr_custom_each_container_1736730443">
+          <div class="gr_custom_book_container_1736730443">
+            <a title="The Glass Hotel" rel="nofollow"
+              href="https://www.goodreads.com/review/show/6925022006?utm_medium=api&amp;utm_source=custom_widget"><img
+                alt="The Glass Hotel" border="0"
+                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564199892l/45754981._SX50_.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1736730443">
+            <a rel="nofollow"
+              href="https://www.goodreads.com/review/show/6925022006?utm_medium=api&amp;utm_source=custom_widget">The
+              Glass Hotel</a>
+          </div>
+          <div class="gr_custom_author_1736730443">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/2786093.Emily_St_John_Mandel">Emily St.
+              John Mandel</a>
+          </div>
+        </div>
+        <div class="gr_custom_each_container_1736730443">
+          <div class="gr_custom_book_container_1736730443">
+            <a title="The Girl Who Played with Fire (Millennium, #2)" rel="nofollow"
+              href="https://www.goodreads.com/review/show/6907824565?utm_medium=api&amp;utm_source=custom_widget"><img
+                alt="The Girl Who Played with Fire" border="0"
+                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351778881l/5060378._SX50_.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1736730443">
+            <a rel="nofollow"
+              href="https://www.goodreads.com/review/show/6907824565?utm_medium=api&amp;utm_source=custom_widget">The
+              Girl Who Played with Fire</a>
+          </div>
+          <div class="gr_custom_author_1736730443">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/706255.Stieg_Larsson">Stieg Larsson</a>
+          </div>
+        </div>
+        <div class="gr_custom_each_container_1736730443">
+          <div class="gr_custom_book_container_1736730443">
+            <a title="Beach Read" rel="nofollow"
+              href="https://www.goodreads.com/review/show/6839533169?utm_medium=api&amp;utm_source=custom_widget"><img
+                alt="Beach Read" border="0"
+                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589881197l/52867387._SX50_.jpg" /></a>
+          </div>
+          <div class="gr_custom_title_1736730443">
+            <a rel="nofollow"
+              href="https://www.goodreads.com/review/show/6839533169?utm_medium=api&amp;utm_source=custom_widget">Beach
+              Read</a>
+          </div>
+          <div class="gr_custom_author_1736730443">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/13905555.Emily_Henry">Emily Henry</a>
+          </div>
+        </div>
+        <div class="gr_custom_each_container_1736730443">
+          <div class="gr_custom_book_container_1736730443">
+            <a title="Miss Sloane" rel="nofollow"
+              href="https://www.goodreads.com/review/show/6604252490?utm_medium=api&amp;utm_source=custom_widget"><img
+                alt="Miss Sloane" border="0"
+                src="https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png" /></a>
+          </div>
+          <div class="gr_custom_title_1736730443">
+            <a rel="nofollow"
+              href="https://www.goodreads.com/review/show/6604252490?utm_medium=api&amp;utm_source=custom_widget">Miss
+              Sloane</a>
+          </div>
+          <div class="gr_custom_author_1736730443">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/17166717.Jonathan_Perera">Jonathan
+              Perera</a>
+          </div>
+        </div>
+        <br style="clear: both" />
+        <center>
+          <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0"
+              src="https://s.gr-assets.com/images/widget/widget_logo.gif" /></a>
+        </center>
+        <noscript>
+          Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Abe, and even join
+          a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+        </noscript>
+      </div>
+
+    </div>
+    <script
+      src="https://www.goodreads.com/review/custom_widget/148156730.Abe's%20bookshelf:%20read?cover_position=left&cover_size=small&num_books=5&order=d&shelf=read&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=1&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=1&widget_id=1736730443&widget_text_color=000000&widget_title_size=large&widget_width=full"
+      type="text/javascript" charset="utf-8"></script>
   </div>
 
 
-    <!-- Footer Content -->
-    <div class="container">
+  <!-- Footer Content -->
+  <div class="container">
 
 
     <!-- Footer -->
@@ -416,25 +674,28 @@
         <!-- hitwebcounter Code START -->
         <div class="col-lg-12">
           <a href="http://www.hitwebcounter.com" target="_blank">
-            Page Views: <img src="http://hitwebcounter.com/counter/counter.php?page=7142014&style=0008&nbdigits=5&type=page&initCount=0" title="" Alt=""   border="0" >
-            <br/>
-            UniqueVisitors: <img src="http://hitwebcounter.com/counter/counter.php?page=7142019&style=0008&nbdigits=5&type=ip&initCount=0" title="" Alt=""   border="0" >
-          </a>     
-        </div>     
-                                      
-        <br/>
+            Page Views: <img
+              src="http://hitwebcounter.com/counter/counter.php?page=7142014&style=0008&nbdigits=5&type=page&initCount=0"
+              title="" Alt="" border="0">
+            <br />
+            UniqueVisitors: <img
+              src="http://hitwebcounter.com/counter/counter.php?page=7142019&style=0008&nbdigits=5&type=ip&initCount=0"
+              title="" Alt="" border="0">
+          </a>
+        </div>
+
+        <br />
         <!-- hitwebcounter.com -->
-        <a href="http://www.hitwebcounter.com" title="" 
-          target="_blank" style="font-family: ; 
-          font-size: px; color: #; text-decoration:  ;">
-        </a>   
+        <a href="http://www.hitwebcounter.com" title="" target="_blank">
+        </a>
       </div>
     </footer>
-      
-    </div>
-    <!-- /.container -->
-    
+
+  </div>
+  <!-- /.container -->
 
 
-  </body>
+
+</body>
+
 </html>
